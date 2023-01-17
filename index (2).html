@@ -1,0 +1,801 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Creatio Website Template | Home :: w3layouts</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	 	<!---strat-slider---->
+	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
+		<!---//strat-slider---->
+		 <!-- scroll -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <!-- //scroll -->	
+			<!-- start portfolios -->
+<link href="css/portfolio.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -40
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+	<!-- popup -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup1.css">
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<script>
+					$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+					});
+				});
+				</script>
+<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen" />
+  <script type="text/javascript">
+    $(function() {
+        $('#portfoliolist a').lightBox();
+    });
+   </script>
+ <!-- nav -->  
+<script type="text/javascript" 	src="js/jquery.smint.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+});
+</script>
+<script>
+window.addEventListener("load",function() {
+  setTimeout(function(){
+    window.scrollTo(0, 1);
+  }, 0);
+});</script>
+
+
+<style>
+	.filter:hover{
+		background-color: #011972;
+		
+	}
+</style>
+</head>
+<body>
+		<!-- start slider -->
+<div  class="slider_bg s7">
+<!-- start main -->
+				<!---start-da-slider----->
+				<div id="da-slider" class="da-slider" style="background-color: #0023a18c;">
+				<div class="da-slide">
+					  <h2 class="title">HeLLO! My Name Is,</h2>
+                      <h3 class="title">Shiv Shankar Singh</h3>
+                      <p class="description">WEB DESIGN . DEVELOPMENT . MARKETING</p>  
+				</div>
+				<div class="da-slide">
+					<h2 class="title">HeLLO! My Name Is,</h2>
+					<h3 class="title">Shiv Shankar Singh</h3>
+					<p class="description">WEB DESIGN . DEVELOPMENT . MARKETING</p>  
+				</div>
+				<div class="da-slide">
+					<h2 class="title">HeLLO! My Name Is,</h2>
+					<h3 class="title">Shiv Shankar Singh</h3>
+					<p class="description">WEB DESIGN . DEVELOPMENT . MARKETING</p> 
+				</div>
+				<div class="da-slide">
+					<h2 class="title">HeLLO! My Name Is,</h2>
+					<h3 class="title">Shiv Shankar Singh</h3>
+					<p class="description">WEB DESIGN . DEVELOPMENT . MARKETING</p> 
+				</div>	
+				<div class="da-slide">
+					<h2 class="title">HeLLO! My Name Is,</h2>
+					<h3 class="title">Shiv Shankar Singh</h3>
+					<p class="description">WEB DESIGN . DEVELOPMENT . MARKETING</p> 
+				</div>
+			</div>
+ 			<!---//End-da-slider----->
+ </div>
+ <a  href="#services" class="button scroll"><img src="images/arrow.png"></a>	
+ 	<!-- start header -->
+ 	<div  style="background-color: #011972" class="header">
+ 		<div class="logo">
+ 			<a  href="#s7" class="scroll"><div style="padding-left: 202px;"><svg width="355.73846153846154" height="48.00000000000001" viewBox="0 0 355.73846153846154 81.00000000000001" class="css-1j8o68f"><defs id="SvgjsDefs10283"></defs><g id="SvgjsG10284" featurekey="0LeO0L-0" transform="matrix(5.804366464861009,0,0,5.804366464861009,64.36476718713801,-35.08739572292282)" fill="#d4272a"><path d="M4.7266 6.045 c1.5495 0 2.5879 0.49806 3.1152 1.4941 c0.36458 0.75521 0.54688 1.4941 0.54688 2.2168 l-0.019531 0 c-1.0612 0.091143 -1.7871 0.13672 -2.1777 0.13672 c0 -0.51433 -0.1595 -0.94727 -0.47852 -1.2988 c-0.29948 -0.16927 -0.57617 -0.25391 -0.83008 -0.25391 l-0.39063 0 c-0.66406 0 -1.0677 0.25716 -1.2109 0.77148 c-0.032549 0.14974 -0.048828 0.26692 -0.048828 0.35156 l0 0.20508 c0 0.72917 0.38411 1.2565 1.1523 1.582 c0.065107 0.058594 0.59896 0.30273 1.6016 0.73242 c0.53386 0.24739 1.0286 0.55338 1.4844 0.91796 l0 0.019531 l-2.4512 0 l0 0.27344 l3.2324 0 l0 0.39063 l0.41016 0 l0 4.2383 l-0.80078 0 l0 2.1777 l-6.2109 0 l0 -2.1777 l-1.4648 0 l0 -1.4648 l0.83008 0 l0 -0.50781 l-0.83008 0 l0 -0.3418 l2.8418 0 l0 2.3145 l2.9102 0 l0 -3.4863 l-2.1777 0 l0 -1.1426 l-2.7051 0 l0 -0.27344 l1.3086 0 l0 -0.019531 c-1.1458 -0.76172 -1.7188 -1.8392 -1.7188 -3.2324 l0 -0.18555 c0 -1.1653 0.35808 -2.0508 1.0742 -2.6563 c0.65104 -0.52083 1.6536 -0.78125 3.0078 -0.78125 z M8.252 12.9199 l0.98633 0 l0 0.27344 l-0.98633 0 l0 -0.27344 z M-0.75198 15.849599999999999 l0.9375 0 l0 0.50781 l-0.9375 0 l0 -0.50781 z M5.5078 15.849599999999999 l0.29296 -0.0000095367 c0.032549 0.0065136 0.048828 0.022793 0.048828 0.048838 l0 0.068359 l-0.25391 0 l0 0.087891 l0.22461 0 l0 0.068359 c0 0.032549 -0.013018 0.048828 -0.039063 0.048828 l-0.18555 0 l0 0.097656 l0.25391 0 l0 0.068359 c0 0.026045 -0.016279 0.039063 -0.048828 0.039063 l-0.29297 0 c-0.032549 0 -0.048828 -0.013018 -0.048828 -0.039063 l0 -0.43945 c0.0065136 -0.032549 0.022793 -0.048828 0.048838 -0.048828 z M5.3906 16.543 l0.087871 0.0000095367 c0.013018 0 0.068359 0.058594 0.16602 0.17578 c0.045576 -0.11719 0.081387 -0.17578 0.10743 -0.17578 l0.068359 0 c0.032549 0 0.048828 0.013018 0.048828 0.039063 c-0.13672 0.15625 -0.20508 0.31901 -0.20508 0.48828 l-0.068359 0 c-0.032549 0 -0.055332 -0.091143 -0.06835 -0.27344 c-0.091143 -0.1237 -0.13672 -0.20834 -0.13672 -0.25392 z M5.3222 17.2266 l0.087881 -0.0000095367 c0.039063 0 0.078125 0.10091 0.11719 0.30273 l0.048828 0 c0.039063 -0.20183 0.074873 -0.30273 0.10742 -0.30273 l0.097656 0 c0.026045 0.0065136 0.039063 0.022793 0.039063 0.048838 l0 0.42969 c0 0.032549 -0.013018 0.048828 -0.039063 0.048828 l-0.068359 0 l0 -0.29297 l-0.029297 0 l-0.087891 0.29297 l-0.068359 0 c-0.032549 0 -0.071611 -0.097656 -0.11719 -0.29297 l-0.019531 0 l0 0.29297 l-0.068359 0 c-0.032549 0 -0.048828 -0.016279 -0.048828 -0.048828 l0 -0.42969 c0.0065136 -0.032549 0.022793 -0.048828 0.048838 -0.048828 z M7.9979 17.9395 l0.23438 0 c0.1237 0 0.18555 0.061846 0.18555 0.18555 c-0.032549 0 -0.048828 0.013018 -0.048828 0.039063 c0.045576 0.058594 0.068359 0.11394 0.068359 0.16602 c-0.039063 0.091143 -0.1237 0.13672 -0.25391 0.13672 l-0.13672 0 c-0.032549 0 -0.048828 -0.016279 -0.048828 -0.048828 l0 -0.47852 z M8.1347 18.0566 l0 0.087891 l0.097656 0 c0.026045 0 0.039063 -0.016279 0.039063 -0.048828 l0 -0.039063 l-0.13672 0 z M8.1347 18.2324 l0 0.11719 l0.11719 0 c0.032549 0 0.048828 -0.016279 0.048828 -0.048828 l0 -0.019531 c0 -0.032549 -0.016279 -0.048828 -0.048828 -0.048828 l-0.11719 0 z M7.9979 18.623 l0.097656 0 c0.032549 0 0.10091 0.10742 0.20508 0.32227 l0.019531 0 l0 -0.32227 l0.11719 0 l0 0.47852 c0 0.032549 -0.016279 0.048828 -0.048828 0.048828 l-0.048828 0 c-0.013018 0 -0.087891 -0.097656 -0.22461 -0.29297 l0 0.24414 c0 0.032549 -0.016279 0.048828 -0.048828 0.048828 l-0.019531 0 c-0.032549 0 -0.048828 -0.016279 -0.048828 -0.048828 l0 -0.47852 z"></path></g><g id="SvgjsG10285" featurekey="pulpyG-0" transform="matrix(1.849987198581693,0,0,1.849987198581693,82.02524120590172,17.447818121295725)" fill="#ffffff"><path d="M13.545 13.3594 c0.56641 2.0508 -1.1328 4.4727 -2.7051 5.5371 c-3.0859 2.0215 -7.1582 1.6992 -10.313 0.078125 l0.91797 -4.0625 l1.5137 0 c0.19531 2.0996 4.8926 2.9688 5.3711 0.89844 c0.23438 -1.0254 -3.4473 -1.3086 -4.6777 -2.2754 c-0.068359 -0.058594 -0.14648 -0.11719 -0.20508 -0.17578 l-0.89844 0 c-0.97656 -0.91797 -1.0645 -2.1387 -0.78125 -3.4082 c1.1914 -5.2051 8.2617 -5.7227 12.344 -3.6621 l-0.9082 3.9551 l-1.5234 0 c0.097656 -1.4844 -4.3945 -2.5 -4.8145 -0.71289 c-0.2832 1.3867 4.2676 0.97656 5.5273 3.1738 c0.10742 0.19531 0.19531 0.42969 0.25391 0.6543 l0.89844 0 z M26.7037578125 13.6719 l-1.4844 6.3672 l-4.8926 0 l1.3867 -5.9766 l-2.832 0 l-1.3965 5.9766 l-4.9219 0 l1.4746 -6.3672 l-0.98633 0 l1.8848 -8.2422 l4.9219 0 l-1.123 4.9512 l2.8223 0 l1.1426 -4.9512 l4.9023 0 l-1.9043 8.2422 l1.0059 0 z M33.007821875 13.6719 l-1.4648 6.3672 l-4.9414 0 l1.4648 -6.3672 l-0.99609 0 l1.9141 -8.2422 l4.9316 0 l-1.8945 8.2422 l0.98633 0 z M45.1806328125 13.3594 l-3.75 6.6797 l-4.7168 0 l-0.69336 -6.6797 l-0.89844 0 l-0.83984 -7.9785 l5.1074 0 l0.5957 7.041 c1.3184 -2.3145 2.5098 -4.7363 3.8184 -7.041 l4.9805 0 l-4.4824 7.9785 l0.87891 0 z M67.7588671875 13.3594 c0.56641 2.0508 -1.1328 4.4727 -2.7051 5.5371 c-3.0859 2.0215 -7.1582 1.6992 -10.313 0.078125 l0.91797 -4.0625 l1.5137 0 c0.19531 2.0996 4.8926 2.9688 5.3711 0.89844 c0.23438 -1.0254 -3.4473 -1.3086 -4.6777 -2.2754 c-0.068359 -0.058594 -0.14648 -0.11719 -0.20508 -0.17578 l-0.89844 0 c-0.97656 -0.91797 -1.0645 -2.1387 -0.78125 -3.4082 c1.1914 -5.2051 8.2617 -5.7227 12.344 -3.6621 l-0.9082 3.9551 l-1.5234 0 c0.097656 -1.4844 -4.3945 -2.5 -4.8145 -0.71289 c-0.2832 1.3867 4.2676 0.97656 5.5273 3.1738 c0.10742 0.19531 0.19531 0.42969 0.25391 0.6543 l0.89844 0 z M80.917625 13.6719 l-1.4844 6.3672 l-4.8926 0 l1.3867 -5.9766 l-2.832 0 l-1.3965 5.9766 l-4.9219 0 l1.4746 -6.3672 l-0.98633 0 l1.8848 -8.2422 l4.9219 0 l-1.123 4.9512 l2.8223 0 l1.1426 -4.9512 l4.9023 0 l-1.9043 8.2422 l1.0059 0 z M82.7782890625 13.6328 l-1.123 0 l4.5898 -8.1934 l4.873 0 l0.79102 8.1934 l1.0938 0 l0.61523 6.3574 l-5.0293 0 l-0.20508 -2.7441 l-2.7832 0 c-0.48828 0.9082 -0.94727 1.8262 -1.4355 2.7441 l-4.9414 0 z M88.2567890625 13.837900000000001 l0 -0.20508 l-1.0645 0 l0.019531 -3.2422 l-1.3086 3.2422 l1.084 0 l-0.078125 0.20508 l1.3477 0 z M107.421984375 13.6328 l-1.4551 6.3574 l-4.541 0 l-1.9336 -6.3574 l-0.22461 0 l-1.4746 6.3574 l-4.5996 0 l1.4746 -6.3574 l-0.88867 0 l1.8848 -8.1836 l5.3613 0 l1.582 5.1367 l1.2012 -5.1367 l4.6191 0 l-1.8945 8.1836 l0.88867 0 z M117.8568359375 13.6719 l2.832 6.3672 l-5.791 0 l-1.8359 -4.4043 l-1.0156 4.4043 l-4.9023 0 l1.4648 -6.3672 l-0.98633 0 l1.8848 -8.2422 l4.9121 0 l-0.94727 4.1016 c1.2793 -1.3672 2.5293 -2.7539 3.7988 -4.1016 l5.6445 0 l-6.6602 6.8359 l0.5957 1.4063 l1.0059 0 z M123.388640625 13.6328 l-1.123 0 l4.5898 -8.1934 l4.873 0 l0.79102 8.1934 l1.0938 0 l0.61523 6.3574 l-5.0293 0 l-0.20508 -2.7441 l-2.7832 0 c-0.48828 0.9082 -0.94727 1.8262 -1.4355 2.7441 l-4.9414 0 z M128.867140625 13.837900000000001 l0 -0.20508 l-1.0645 0 l0.019531 -3.2422 l-1.3086 3.2422 l1.084 0 l-0.078125 0.20508 l1.3477 0 z M135.1806359375 13.3594 l-0.88867 0 l1.8164 -7.9785 c1.6992 0 4.7656 -0.16602 7.1875 0.15625 c2.1387 0.3125 4.209 1.1035 3.8477 3.6719 c-0.20508 1.5527 -1.3965 3.1445 -2.6855 4.1504 l0.87891 0 c-0.23438 0.17578 -0.46875 0.36133 -0.72266 0.48828 l3.3398 6.1914 l-5.8594 0 l-2.4414 -4.7754 l-1.084 4.7754 l-4.9219 0 z M140.2197359375 8.994 l-0.5957 2.5195 c2.3535 0 3.6719 -2.5195 0.5957 -2.5195 z"></path></g></svg></div></a>
+ 		</div>
+		<!-- start top-nav-->
+		<div class="h_right" >	
+		<div style="display: flex; top: 0px; float: left; background-color: #011972;" class="subMenu" >
+			<div class="wrap">
+		 	 <div class="inner">
+		 		<a href="#" id="sTop" class="subNavBtn">SERVICES</a> 
+				 <a href="#" id="s4"  class="subNavBtn">ACADEMICS</a>
+				 <a href="#" id="s5" style="padding: 10px; margin-left: 5px ;" class="subNavBtn end">TECHNICAL</a>
+				<a href="#" id="s1" style="padding: 2px;" class="subNavBtn">MY PROJECTS</a>
+				<a href="#" id="s3" style="padding: 10px;" class="subNavBtn">BLOG</a>
+				<a href="#" id="s2" style="padding: 10px;" class="subNavBtn">ABOUT ME</a>
+				<a href="#" id="s6" style="padding: 10px;" class="subNavBtn end">CONTACT</a>
+				<div style="display: inline; float: right;"><svg width="255.73846153846154" height="48.00000000000001" viewBox="0 0 355.73846153846154 81.00000000000001" class="css-1j8o68f"><defs id="SvgjsDefs10283"></defs><g id="SvgjsG10284" featurekey="0LeO0L-0" transform="matrix(5.804366464861009,0,0,5.804366464861009,64.36476718713801,-35.08739572292282)" fill="#d4272a"><path d="M4.7266 6.045 c1.5495 0 2.5879 0.49806 3.1152 1.4941 c0.36458 0.75521 0.54688 1.4941 0.54688 2.2168 l-0.019531 0 c-1.0612 0.091143 -1.7871 0.13672 -2.1777 0.13672 c0 -0.51433 -0.1595 -0.94727 -0.47852 -1.2988 c-0.29948 -0.16927 -0.57617 -0.25391 -0.83008 -0.25391 l-0.39063 0 c-0.66406 0 -1.0677 0.25716 -1.2109 0.77148 c-0.032549 0.14974 -0.048828 0.26692 -0.048828 0.35156 l0 0.20508 c0 0.72917 0.38411 1.2565 1.1523 1.582 c0.065107 0.058594 0.59896 0.30273 1.6016 0.73242 c0.53386 0.24739 1.0286 0.55338 1.4844 0.91796 l0 0.019531 l-2.4512 0 l0 0.27344 l3.2324 0 l0 0.39063 l0.41016 0 l0 4.2383 l-0.80078 0 l0 2.1777 l-6.2109 0 l0 -2.1777 l-1.4648 0 l0 -1.4648 l0.83008 0 l0 -0.50781 l-0.83008 0 l0 -0.3418 l2.8418 0 l0 2.3145 l2.9102 0 l0 -3.4863 l-2.1777 0 l0 -1.1426 l-2.7051 0 l0 -0.27344 l1.3086 0 l0 -0.019531 c-1.1458 -0.76172 -1.7188 -1.8392 -1.7188 -3.2324 l0 -0.18555 c0 -1.1653 0.35808 -2.0508 1.0742 -2.6563 c0.65104 -0.52083 1.6536 -0.78125 3.0078 -0.78125 z M8.252 12.9199 l0.98633 0 l0 0.27344 l-0.98633 0 l0 -0.27344 z M-0.75198 15.849599999999999 l0.9375 0 l0 0.50781 l-0.9375 0 l0 -0.50781 z M5.5078 15.849599999999999 l0.29296 -0.0000095367 c0.032549 0.0065136 0.048828 0.022793 0.048828 0.048838 l0 0.068359 l-0.25391 0 l0 0.087891 l0.22461 0 l0 0.068359 c0 0.032549 -0.013018 0.048828 -0.039063 0.048828 l-0.18555 0 l0 0.097656 l0.25391 0 l0 0.068359 c0 0.026045 -0.016279 0.039063 -0.048828 0.039063 l-0.29297 0 c-0.032549 0 -0.048828 -0.013018 -0.048828 -0.039063 l0 -0.43945 c0.0065136 -0.032549 0.022793 -0.048828 0.048838 -0.048828 z M5.3906 16.543 l0.087871 0.0000095367 c0.013018 0 0.068359 0.058594 0.16602 0.17578 c0.045576 -0.11719 0.081387 -0.17578 0.10743 -0.17578 l0.068359 0 c0.032549 0 0.048828 0.013018 0.048828 0.039063 c-0.13672 0.15625 -0.20508 0.31901 -0.20508 0.48828 l-0.068359 0 c-0.032549 0 -0.055332 -0.091143 -0.06835 -0.27344 c-0.091143 -0.1237 -0.13672 -0.20834 -0.13672 -0.25392 z M5.3222 17.2266 l0.087881 -0.0000095367 c0.039063 0 0.078125 0.10091 0.11719 0.30273 l0.048828 0 c0.039063 -0.20183 0.074873 -0.30273 0.10742 -0.30273 l0.097656 0 c0.026045 0.0065136 0.039063 0.022793 0.039063 0.048838 l0 0.42969 c0 0.032549 -0.013018 0.048828 -0.039063 0.048828 l-0.068359 0 l0 -0.29297 l-0.029297 0 l-0.087891 0.29297 l-0.068359 0 c-0.032549 0 -0.071611 -0.097656 -0.11719 -0.29297 l-0.019531 0 l0 0.29297 l-0.068359 0 c-0.032549 0 -0.048828 -0.016279 -0.048828 -0.048828 l0 -0.42969 c0.0065136 -0.032549 0.022793 -0.048828 0.048838 -0.048828 z M7.9979 17.9395 l0.23438 0 c0.1237 0 0.18555 0.061846 0.18555 0.18555 c-0.032549 0 -0.048828 0.013018 -0.048828 0.039063 c0.045576 0.058594 0.068359 0.11394 0.068359 0.16602 c-0.039063 0.091143 -0.1237 0.13672 -0.25391 0.13672 l-0.13672 0 c-0.032549 0 -0.048828 -0.016279 -0.048828 -0.048828 l0 -0.47852 z M8.1347 18.0566 l0 0.087891 l0.097656 0 c0.026045 0 0.039063 -0.016279 0.039063 -0.048828 l0 -0.039063 l-0.13672 0 z M8.1347 18.2324 l0 0.11719 l0.11719 0 c0.032549 0 0.048828 -0.016279 0.048828 -0.048828 l0 -0.019531 c0 -0.032549 -0.016279 -0.048828 -0.048828 -0.048828 l-0.11719 0 z M7.9979 18.623 l0.097656 0 c0.032549 0 0.10091 0.10742 0.20508 0.32227 l0.019531 0 l0 -0.32227 l0.11719 0 l0 0.47852 c0 0.032549 -0.016279 0.048828 -0.048828 0.048828 l-0.048828 0 c-0.013018 0 -0.087891 -0.097656 -0.22461 -0.29297 l0 0.24414 c0 0.032549 -0.016279 0.048828 -0.048828 0.048828 l-0.019531 0 c-0.032549 0 -0.048828 -0.016279 -0.048828 -0.048828 l0 -0.47852 z"></path></g><g id="SvgjsG10285" featurekey="pulpyG-0" transform="matrix(1.849987198581693,0,0,1.849987198581693,82.02524120590172,17.447818121295725)" fill="#ffffff"><path d="M13.545 13.3594 c0.56641 2.0508 -1.1328 4.4727 -2.7051 5.5371 c-3.0859 2.0215 -7.1582 1.6992 -10.313 0.078125 l0.91797 -4.0625 l1.5137 0 c0.19531 2.0996 4.8926 2.9688 5.3711 0.89844 c0.23438 -1.0254 -3.4473 -1.3086 -4.6777 -2.2754 c-0.068359 -0.058594 -0.14648 -0.11719 -0.20508 -0.17578 l-0.89844 0 c-0.97656 -0.91797 -1.0645 -2.1387 -0.78125 -3.4082 c1.1914 -5.2051 8.2617 -5.7227 12.344 -3.6621 l-0.9082 3.9551 l-1.5234 0 c0.097656 -1.4844 -4.3945 -2.5 -4.8145 -0.71289 c-0.2832 1.3867 4.2676 0.97656 5.5273 3.1738 c0.10742 0.19531 0.19531 0.42969 0.25391 0.6543 l0.89844 0 z M26.7037578125 13.6719 l-1.4844 6.3672 l-4.8926 0 l1.3867 -5.9766 l-2.832 0 l-1.3965 5.9766 l-4.9219 0 l1.4746 -6.3672 l-0.98633 0 l1.8848 -8.2422 l4.9219 0 l-1.123 4.9512 l2.8223 0 l1.1426 -4.9512 l4.9023 0 l-1.9043 8.2422 l1.0059 0 z M33.007821875 13.6719 l-1.4648 6.3672 l-4.9414 0 l1.4648 -6.3672 l-0.99609 0 l1.9141 -8.2422 l4.9316 0 l-1.8945 8.2422 l0.98633 0 z M45.1806328125 13.3594 l-3.75 6.6797 l-4.7168 0 l-0.69336 -6.6797 l-0.89844 0 l-0.83984 -7.9785 l5.1074 0 l0.5957 7.041 c1.3184 -2.3145 2.5098 -4.7363 3.8184 -7.041 l4.9805 0 l-4.4824 7.9785 l0.87891 0 z M67.7588671875 13.3594 c0.56641 2.0508 -1.1328 4.4727 -2.7051 5.5371 c-3.0859 2.0215 -7.1582 1.6992 -10.313 0.078125 l0.91797 -4.0625 l1.5137 0 c0.19531 2.0996 4.8926 2.9688 5.3711 0.89844 c0.23438 -1.0254 -3.4473 -1.3086 -4.6777 -2.2754 c-0.068359 -0.058594 -0.14648 -0.11719 -0.20508 -0.17578 l-0.89844 0 c-0.97656 -0.91797 -1.0645 -2.1387 -0.78125 -3.4082 c1.1914 -5.2051 8.2617 -5.7227 12.344 -3.6621 l-0.9082 3.9551 l-1.5234 0 c0.097656 -1.4844 -4.3945 -2.5 -4.8145 -0.71289 c-0.2832 1.3867 4.2676 0.97656 5.5273 3.1738 c0.10742 0.19531 0.19531 0.42969 0.25391 0.6543 l0.89844 0 z M80.917625 13.6719 l-1.4844 6.3672 l-4.8926 0 l1.3867 -5.9766 l-2.832 0 l-1.3965 5.9766 l-4.9219 0 l1.4746 -6.3672 l-0.98633 0 l1.8848 -8.2422 l4.9219 0 l-1.123 4.9512 l2.8223 0 l1.1426 -4.9512 l4.9023 0 l-1.9043 8.2422 l1.0059 0 z M82.7782890625 13.6328 l-1.123 0 l4.5898 -8.1934 l4.873 0 l0.79102 8.1934 l1.0938 0 l0.61523 6.3574 l-5.0293 0 l-0.20508 -2.7441 l-2.7832 0 c-0.48828 0.9082 -0.94727 1.8262 -1.4355 2.7441 l-4.9414 0 z M88.2567890625 13.837900000000001 l0 -0.20508 l-1.0645 0 l0.019531 -3.2422 l-1.3086 3.2422 l1.084 0 l-0.078125 0.20508 l1.3477 0 z M107.421984375 13.6328 l-1.4551 6.3574 l-4.541 0 l-1.9336 -6.3574 l-0.22461 0 l-1.4746 6.3574 l-4.5996 0 l1.4746 -6.3574 l-0.88867 0 l1.8848 -8.1836 l5.3613 0 l1.582 5.1367 l1.2012 -5.1367 l4.6191 0 l-1.8945 8.1836 l0.88867 0 z M117.8568359375 13.6719 l2.832 6.3672 l-5.791 0 l-1.8359 -4.4043 l-1.0156 4.4043 l-4.9023 0 l1.4648 -6.3672 l-0.98633 0 l1.8848 -8.2422 l4.9121 0 l-0.94727 4.1016 c1.2793 -1.3672 2.5293 -2.7539 3.7988 -4.1016 l5.6445 0 l-6.6602 6.8359 l0.5957 1.4063 l1.0059 0 z M123.388640625 13.6328 l-1.123 0 l4.5898 -8.1934 l4.873 0 l0.79102 8.1934 l1.0938 0 l0.61523 6.3574 l-5.0293 0 l-0.20508 -2.7441 l-2.7832 0 c-0.48828 0.9082 -0.94727 1.8262 -1.4355 2.7441 l-4.9414 0 z M128.867140625 13.837900000000001 l0 -0.20508 l-1.0645 0 l0.019531 -3.2422 l-1.3086 3.2422 l1.084 0 l-0.078125 0.20508 l1.3477 0 z M135.1806359375 13.3594 l-0.88867 0 l1.8164 -7.9785 c1.6992 0 4.7656 -0.16602 7.1875 0.15625 c2.1387 0.3125 4.209 1.1035 3.8477 3.6719 c-0.20508 1.5527 -1.3965 3.1445 -2.6855 4.1504 l0.87891 0 c-0.23438 0.17578 -0.46875 0.36133 -0.72266 0.48828 l3.3398 6.1914 l-5.8594 0 l-2.4414 -4.7754 l-1.084 4.7754 l-4.9219 0 z M140.2197359375 8.994 l-0.5957 2.5195 c2.3535 0 3.6719 -2.5195 0.5957 -2.5195 z"></path></g></svg></div>
+			  </div>
+			   <!-- /.navbar-collapse -->
+	             	<a id="s7" class="right-msg subNavBtn msg-icon"href="#"></a>
+	                <div class="clearfix"> </div>		
+	    </div>	
+	   </div>
+			<!-- start smart_nav * -->
+		 	<nav class="nav">
+	            <ul class="nav-list">
+	                <li class="nav-item"><a href="#services">Services</a></li>
+					<li class="nav-item"><a href="#studio" class="scroll">Academics</a></li>
+	                 <li class="nav-item"><a href="#work" class="scroll">Projects</a></li>
+					 <li class="nav-item"><a href="#pricing" class="scroll">Technical</a></li>	            	               
+					 <li class="nav-item"><a href="#about" class="scroll">About us</a></li>
+					  <li class="nav-item"><a href="#blog" class="scroll">Blog</a></li>
+	                <li class="nav-item"><a href="#contact"  class="scroll">Contact</a></li>
+	                <div class="clear"></div>
+	            </ul>
+	    	</nav>
+	        <script type="text/javascript" src="js/responsive.menu.js"></script>
+			<!-- end smart_nav * -->
+		</div>
+		<div class="clear"></div>
+	  </div>
+<!---//End-header--->	
+<!--- services --->	
+     <div class="services sTop" id="services" style="background-color: #13309b;">
+		  	<div class="wrap" >
+		  		<h3>SERVICES</h3>
+		  		<p>Proin iaculis purus consequat sem cure.</p>
+				<div class="col_1_of_3 span_1_of_3">
+					<img src="images/service1.png" alt="">
+					<h4><a href="#">PIXEL PERFECT</a></h4>
+					<p>The designs made by me are perfect not to color but for each single details that is as clear as pixel to pixel experience.</p>
+					<p><a href="#">MORE</a></p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<img src="images/service2.png" alt="">
+					<h4><a href="#">CREATIVE DESIGN</a></h4>
+					<p>My designs are creative? really. this is not my statements but the statements of my clents to whom the design are according to thier needs.</p>
+					<p><a href="#">MORE</a></p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<img src="images/service3.png" alt="">
+					<h4><a href="#">RESPONSIVE THEME</a></h4>
+					<p>My first priority is that to made a responsive websites for my clients which is always mobile to theater ready.</p>
+					<p><a href="#">MORE</a></p>
+				</div>
+				 <div class="clear"></div>
+   		   </div>
+   		 </div>
+   		 <div class="portfoliO s1" id="work"><!-- start portfoli1 -->
+   		 <div class="wrap">	
+		 <h3>WORKS</h3>
+		 <p>Proin iaculis purus consequat sem cure.</p>
+		 <div class="container"><!-- start container -->		 
+	       <!-- start h_menu -->
+				<div class="h_menu">
+				<ul class="flexy-menu thick orange">
+				                <li class="active"> <span class="filter active" data-filter="app card icon web">VIEW ALL</span></li>
+				                <li><span class="filter" data-filter="app  icon">ILLUSTRATION</span></li>
+				                <li><span class="filter" data-filter="card ">LOGO</span></li>				            
+				                <li><span class="filter" data-filter="icon app card ">THIPOGRAPHY</span></li>
+				                <li><span class="filter" data-filter="web card icon">POSTER</span></li>
+				</ul>
+				</div>	<!-- end h_menu -->
+				<script type="text/javascript" src="js/flexy-menu.js"></script>
+				<link href="css/header_style1.css" rel="stylesheet" type="text/css" media="all" />
+				<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+
+			<!-- end smart_nav * -->
+						<ul id="filters" class="clearfix">
+							<li>
+								<span class="filter active" style="background-color: #011972;" data-filter="app card icon web">VIEW ALL</span>
+							</li>
+							<li>
+								<span class="filter" onMouseOver="this.style.backgroundColor='blue' ; this.style.color='fff'"
+								onMouseOut="this.style.backgroundColor='#fff'; this.style.color='black'" data-filter="app  icon">ILLUSTRATION</span>
+							</li>
+							<li>
+								<span onMouseOver="this.style.backgroundColor='blue' ; this.style.color='fff'"
+								onMouseOut="this.style.backgroundColor='#fff'; this.style.color='black'" class="filter" data-filter="card ">LOGO</span>
+							</li>
+							<li>
+								<span onMouseOver="this.style.backgroundColor='blue' ; this.style.color='fff'"
+								onMouseOut="this.style.backgroundColor='#fff'; this.style.color='black'"class="filter" data-filter="icon app card ">THIPOGRAPHY</span>
+							</li>
+							<li>
+								<span onMouseOver="this.style.backgroundColor='blue' ; this.style.color='fff'"
+								onMouseOut="this.style.backgroundColor='#fff'; this.style.color='black'" class="filter" data-filter="web card icon">POSTER</span>
+							</li>
+						</ul>
+						
+						<div id="portfoliolist">
+							<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/port.jpg" alt="Image 2" style="top: 0px;"> </a>
+									
+								</div>
+							</div>						
+							<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port1.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/port1.jpg" alt="Image 2" style="top: 0px;"> </a>								
+								</div>
+							</div>
+							<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port2.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/port2.jpg" alt="Image 2" style="top: 0px;"> </a>							
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port3.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/port3.jpg" alt="Image 2" style="top: 0px;"> </a>
+									
+								</div>
+							</div>
+							<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port4.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/port4.jpg" alt="Image 2" style="top: 0px;"> </a>
+									
+								</div>
+							</div>
+							<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port5.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/port5.jpg" alt="Image 5" style="top: 0px;"> </a>
+								
+								</div>
+							</div>
+																
+						</div>				
+						</div>	
+						<div class="img">
+							<a href="#"><img src="images/zoom.png" alt=""></a>	
+						</div>						
+			</div><!-- end container -->
+		</div>
+  <!----start-team-members---->
+				<div class="team-members s2" id="about" style="background-color: rgb(36, 36, 36);">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3> <hr> ABOUT US <hr> </h3>
+							<p style="font-size: 18px;">I am working as Software Engineer for more than 5 years. I mainly work on Java, Spring, Hibernate, … etc. I am very passionate about learning and trying new technologies and new topics whichever trending in the market.
+
+								I am here to share some of the latest topics that come in my way of developing/learning new things. And I will share some of the interview question and answers that will help for those who all are trying for the new job.</p>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid">
+								<img src="images/team-member1.jpg" alt="" />
+								<h4>Somit</h4>
+								<h5>Marketing</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="tm-head-grid">
+								<img src="images/team-member2.jpg" alt="" />
+								<h4>Abhishek</h4>
+								<h5>Designer</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="tm-head-grid">
+								<img src="images/team-member3.jpg" alt="" />
+								<h4>Anuj</h4>
+								<h5>Developer</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="clear"> </div>
+						</div>
+					</div>
+				</div>
+				<!----//End-team-members----> 
+<!----start-team-members---->
+				<div class="experience">
+					<div class="wrap"> 
+						<div class="ex-head">
+							<h3>OUR EXPERIENCE</h3>
+							<p>Proin iaculis purus consequat sem cure.</p>
+						</div>
+						<div class="prog">
+								<div class="text">
+									<span>Web design</span>
+								</div>
+								<div class="text_p">
+									<span>90%</span>
+								</div>
+								<div class="clear"></div>
+								<div class="progress-bar-container" data-percent="90%">
+									<div class="progress-bar" style="width: 90%;">
+									</div>
+								</div>
+							</div>
+							<div class="prog1">
+								<div class="text">
+									<span>HTML/css</span>
+								</div>
+								<div class="text_p">
+									<span>40%</span>
+								</div>
+								<div class="clear"></div>
+								<div class="progress-bar-container" data-percent="90%">
+									<div class="progress-bar1" style="width: 40%;">
+									</div>
+								</div>
+							</div>
+							<div class="prog2">
+								<div class="text">
+									<span>illustration</span>
+								</div>
+								<div class="text_p">
+									<span>60%</span>
+								</div>
+								<div class="clear"></div>
+								<div class="progress-bar-container" data-percent="90%">
+									<div class="progress-bar2" style="width: 60%;">
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!----//End-team-members----> 
+				<!---- fun ---->
+				<div class="fun">
+					<div class="wrap"> 
+						<div class="fun-head">
+							<h3>SOME FUN FACTS</h3>							
+						</div>
+						<div class="fun-head-grids">
+							<div class="fun-head-grid">
+								<img src="images/fact1.png" alt="" />
+								<h4>638</h4>
+								<h5>CUP OF COFFEE</h5>						
+							</div>
+							<div class="fun-head-grid">
+								<img src="images/fact2.png" alt="" />
+								<h4>746</h4>
+								<h5>HAPPY CLIENTS</h5>					
+							</div>
+							<div class="fun-head-grid">
+								<img src="images/fact3.png" alt="" />
+								<h4>887</h4>
+								<h5>SONG LISTENED</h5>								
+							</div>
+							<div class="fun-head-grid">
+								<img src="images/fact4.png" alt="" />
+								<h4>1047</h4>
+								<h5>ENDED PROJECTS</h5>								
+							</div>
+							<div class="clear"> </div>
+						</div>
+					</div>
+				</div>
+				<!----//End-fun----> 
+   		        <!----start-blog---->
+				<div class="blog s3" id="blog">
+					<div class="wrap"> 
+						<div class="blog-head">
+							<h3>BLOG</h3>
+							<p>Proin iaculis purus consequat sem cure.</p>
+						</div>
+						<div class="blog-grid">
+							<div class="blog-left">
+							 	<div class="img-left">
+							 		<img src="images/blog1.jpg" alt="" />
+							 	</div>	
+							 	<div class="text-right">
+							 		<h6>March 29, 2014</h6>
+							 		<h3><a href="#">A NEW INVENTION FOR LOVERS WHO LOVE</a></h3>
+							 		<img src="images/line.png" alt="" />
+							 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum ....</p>
+							 		<p><a href="#">MORE</a></p>
+							 	</div>
+							    <div class="clear"> </div>
+							</div>
+							<div class="blog-right">
+							 	<div class="img-left">
+							 		<img src="images/blog2.jpg" alt="" />
+							 	</div>	
+							 	<div class="text-right">
+							 		<h6>March 29, 2014</h6>
+							 		<h3><a href="#">A NEW INVENTION FOR LOVERS WHO LOVE</a></h3>
+							 		<img src="images/line.png" alt="" />
+							 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum ....</p>
+							 		<p><a href="#">MORE</a></p>
+							 	</div>
+							    <div class="clear"> </div>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<div class="blog-grid">
+							<div class="blog-left">
+							 	<div class="img-left">
+							 		<img src="images/blog3.jpg" alt="" />
+							 	</div>	
+							 	<div class="text-right">
+							 		<h6>March 29, 2014</h6>
+							 		<h3><a href="#">A NEW INVENTION FOR LOVERS WHO LOVE</a></h3>
+							 		<img src="images/line.png" alt="" />
+							 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum ....</p>
+							 		<p><a href="#">MORE</a></p>
+							 	</div>
+							    <div class="clear"> </div>
+							</div>
+							<div class="blog-right">
+							 	<div class="img-left">
+							 		<img src="images/blog4.jpg" alt="" />
+							 	</div>	
+							 	<div class="text-right">
+							 		<h6>March 29, 2014</h6>
+							 		<h3><a href="#">A NEW INVENTION FOR LOVERS WHO LOVE</a></h3>
+							 		<img src="images/line.png" alt="" />
+							 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum ....</p>
+							 		<p><a href="#">MORE</a></p>
+							 	</div>
+							    <div class="clear"> </div>
+							</div>
+							<div class="clear"> </div>
+						</div>
+					</div>
+				</div>
+				<!----//End-blog----> 
+		 		<!---- strat-studio---->
+   		        <div class="studio s4" id="studio">
+					<div class="wrap"> 
+						<div class="studio-head">
+							<h3>STUDIO</h3>
+							<p>Proin iaculis purus consequat sem cure.</p>						
+						</div>
+						</div>
+						<iframe src="//player.vimeo.com/video/91973305" width="600px" margin:0 auto; height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>			
+				<!----//End-studio----> 
+   		       <!---- strat-clent---->
+		   	    <div class="clients">
+					<div class="wrap"> 
+						<div class="client-head">
+							<h3>OUR CLIENTS</h3>											
+						</div>
+						<!---strat-image-cursuals---->
+		                  <div class="t-clients">
+		                  	<div class="wrap"> 											 
+									<div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul class="flexiselDemo3 nbs-flexisel-ul" style="left: -253.6px; display: block;">					    					    					       
+									<li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client1.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client2.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client3.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client4.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client5.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client1.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client2.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/client3.png"></li></ul><div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div><div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div></div></div> 
+									<div class="clear"> </div>      
+								  <!---strat-image-cursuals---->
+										<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+										<!---End-image-cursuals---->
+										<script type="text/javascript">
+										$(window).load(function() {
+										    $(".flexiselDemo3").flexisel({
+										        visibleItems: 5,
+										        animationSpeed: 1000,
+										        autoPlay: true,
+										        autoPlaySpeed: 3000,            
+										        pauseOnHover: true,
+										        enableResponsiveBreakpoints: true,
+										        responsiveBreakpoints: { 
+										            portrait: { 
+										                changePoint:480,
+										                visibleItems: 1
+										            }, 
+										            landscape: { 
+										                changePoint:640,
+										                visibleItems: 2
+										            },
+										            tablet: { 
+										                changePoint:768,
+										                visibleItems: 3
+										            }
+										        }
+										    });
+										});
+										</script>
+								<!---->
+						  		<!---->
+						 	 </div>				
+						</div>
+					</div>					
+				</div>
+				<!----//End-clients----> 
+				  <div class="pricing s5" id="pricing">
+					<div class="wrap"> 
+						<div class="pricing-head">
+							<h3>PRICING TABLES</h3>
+							<p>Proin iaculis purus consequat sem cure.</p>						
+						</div>								
+			   		 	<div class="pricing-grids">
+									<div class="pricing-grid1">	
+										<h3><a href="#">₹<span>199</span><p>month</p></a></h3>						
+										<div class="price-value">
+											<a href="#">MINI</a>
+										</div>
+										<img src="images/border.png" alt="" />
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sitamet, Consect</a></li>
+											<li><a href="#">Adipiscing elit</a></li>
+											<li><a href="#">Proin commodo turips</a></li>
+											<li><a href="#">Laws pulvinarvel</a></li>
+											<li><a href="#">Prnare nisi pretium</a></li>
+										</ul>
+										<div class="cart1">
+											<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog"><j>TRY</j></a>
+										</div>	
+										</div>
+									</div>
+									<div class="pricing-grid2">
+										<h3><a href="#">₹<span>289</span><p>month</p></a></h3>
+										<div class="price-value">
+											<a href="#">STANDARD</a>
+										</div>
+										<img src="images/border.png" alt="" />
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sitamet, Consect</a></li>
+											<li><a href="#">Adipiscing elit</a></li>
+											<li><a href="#">Proin commodo turips</a></li>
+											<li><a href="#">Laws pulvinarvel</a></li>
+											<li><a href="#">Prnare nisi pretium</a></li>
+											<li><a href="#">Proin commodo turips</a></li>
+											<li><a href="#">Laws pulvinarvel</a></li>
+										</ul>
+										<div class="cart1">
+											<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog"><k>TRY</k></a>
+										</div>	
+										</div>
+									</div>
+									<div class="pricing-grid3">	
+										<h3><a href="#">₹<span>379</span><p>month</p></a></h3>						
+										<div class="price-value">
+											<a href="#">PREMIUM</a>
+										</div>	
+										<img src="images/border.png" alt="" />									
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sitamet, Consect</a></li>
+											<li><a href="#">Adipiscing elit</a></li>
+											<li><a href="#">Proin commodo turips</a></li>
+											<li><a href="#">Laws pulvinarvel</a></li>
+											<li><a href="#">Prnare nisi pretium</a></li>
+											<li><a href="#">Dolor sitamet, Consect</a></li>
+											<li><a href="#">Adipiscing elit</a></li>
+											<li><a href="#">Proin commodo turips</a></li>
+											<li><a href="#">Laws pulvinarvel</a></li>
+										</ul>
+										<div class="cart1">
+											<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog"><l>TRY</l></a>
+										</div>	
+										</div>
+									</div>																											
+										<!-----pop-up-grid---->
+											 <div id="small-dialog" class="mfp-hide">
+												<div class="pop_up">
+												 	<div class="payment-online-form-left">
+														<form>
+															<h4><span class="shipping"> </span>Shipping</h4>
+															<ul>
+																<li><input class="text-box-dark" type="text" value="Frist Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Frist Name';}"></li>
+																<li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
+															</ul>
+															<ul>
+																<li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
+																<li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
+															</ul>
+															<ul>
+																<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
+																<li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
+																<div class="clear"> </div>
+															</ul>
+															<div class="clear"> </div>
+														<ul class="payment-type">
+															<h4><span class="payment"> </span> Payments</h4>
+															<li><span class="col_checkbox">
+																<input id="3" class="css-checkbox1" type="checkbox">
+																<label for="3" name="demo_lbl_1" class="css-label1"> </label>
+																<a class="visa" href="#"> </a>
+																</span>
+																
+															</li>
+															<li>
+																<span class="col_checkbox">
+																	<input id="4" class="css-checkbox2" type="checkbox">
+																	<label for="4" name="demo_lbl_2" class="css-label2"> </label>
+																	<a class="paypal" href="#"> </a>
+																</span>
+															</li>
+															<div class="clear"> </div>
+														</ul>
+															<ul>
+																<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
+																<li><input class="text-box-dark" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
+																<div class="clear"> </div>
+															</ul>
+															<ul>
+																<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+																<li><input class="text-box-dark" type="text" value="Security Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Security Code';}"></li>
+																<div class="clear"> </div>
+															</ul>
+															<ul class="payment-sendbtns">
+																<li><input type="reset" value="Cancel"></li>
+																<li><input type="submit" value="Process order"></li>
+															</ul>
+															<div class="clear"> </div>
+														</form>
+													</div>
+									  			</div>
+											</div>
+											<!-----pop-up-grid---->
+										</div>
+						<div class="clear"> </div>
+   		            </div>
+				</div>
+				<!-----logos---->	
+		   		 <div class="logos"> 
+		   		 	<div class="wrap"> 
+			   		 	<ul>
+			   		 		<li><img src="images/client6.png" alt="" /></li>
+			   		 		<li><img src="images/client7.png" alt="" /></li>
+			   		 		<li><img src="images/client8.png" alt="" /></li>
+			   		 	</ul>
+		   		 	</div>
+		   		 </div>
+		   		 <!-----cntact---->	
+   		 		<div class="contact s6" id="contact">
+					<div class="wrap">
+						<h3>CONTACT US</h3>
+							<p>Proin iaculis purus consequat sem cure.</p>	
+				        <div class="contact_form">
+							 	 	    <form method="post" action="contact-post.html">
+										    	<span><input type="text" value="NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}"><label><img src="images/con1.png" alt="" /></label></span>									    
+										    	<span class="left"><input type="text" value="EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}"><label><img src="images/con2.png" alt="" /></label></span>
+										    <div class="clear"></div>
+										    	<span><textarea placeholder="MESSAGE"></textarea><label1><img src="images/con3.png" alt="" /></label1></span>
+										   		<input type="submit" class="" value="Submit">
+									    </form>
+						 </div>
+					</div>
+				</div>
+		   		 <div class="map">
+					<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px"></a></small>
+			     </div>
+		   		  <div class="signup">
+   		              <div class="form">	
+							<span><label><img src="images/msg.png" alt="" /></label><input type="text" value="Your E-MAIL Please?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your E-MAIL Please?';}"></span>
+							<span><input type="submit" value="Sign Up Now" id="submit" name="submit"></span>
+							<p>Promise we do not spam : )</p>
+							<div class="clear"> </div>
+					  </div>
+   		         </div>
+   		        <!----start-bottom-footer---->
+				<div class="bottom-footer">
+					<div class="wrap"> 
+						<div class="bottom-footer-center">
+							<ul class="bottom-social-icons">
+								<li><a class="bottom-twitter" href="#"> </a></li>
+								<li><a class="bottom-facebook" href="#"> </a></li>
+								<li><a class="bottom-pin" href="#"> </a></li>
+								<li><a class="bottom-google" href="#"> </a></li>
+								<div class="clear"> </div>
+							</ul>
+						</div>	
+						<div class="bottom-footer-left">
+							<p><span>&#169; Copyright 2023 3S websolutions Ltd</span> Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+						</div>		  
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!----//End-bottom-footer---->
+ <!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>
